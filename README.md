@@ -1,4 +1,3 @@
-# data-structures-exam-hospital
-🏥💉
+# Hospital FacensCare 🏥💉
 
 ## Para iniciar o programa, executar o arquivo Hospital.py
