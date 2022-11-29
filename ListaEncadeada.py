@@ -105,7 +105,7 @@ class ListaEncadeada:
             while corrente and corrente.dado['nome'] != valor:
                 anterior = corrente
                 corrente = corrente.proximo
-                print('❌ ' + corrente.dado['nome'] + '(x' + corrente.dado['quantidade'] + ')' + ' removido!')
+                # print('❌ ' + corrente.dado['nome'] + '(x' + corrente.dado['quantidade'] + ')' + ' removido!')
             # O nodo corrente é o nodo a ser removido.
             if corrente:
                 anterior.proximo = corrente.proximo
