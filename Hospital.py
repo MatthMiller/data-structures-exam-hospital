@@ -1,6 +1,7 @@
+from Farmacia import *
+from Queue import *
 import os
 import copy
-from Queue import *
 
 class Hospital:
     def __init__(self):
@@ -51,11 +52,15 @@ class Hospital:
         self.mostrarPacientes('emergencial')
         print('Fila comum de pacientes:')
         self.mostrarPacientes('comum')
-
+        
+        irParaFarmacia = input('Deseja ir para farmácia? (s/n): ') 
+        if (irParaFarmacia.lower() == 's'):
+            Farmacia()
+            self.statusFila()
         andarAtendimento = input('Deseja fazer andar o atendimento? (s/n): ')
         self.andarAtendimento(andarAtendimento)
         nomePaciente = input('Digite o nome do novo paciente a ser inserido: ')
         tipoPaciente = input('Fila comum ou emergencial? (c/e): ')
         self.adicionarPaciente(nomePaciente, tipoPaciente)
-
+            
 Hospital()
